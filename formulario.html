@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Ezequiel Lissa</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .form-container {
+      max-width: 500px;
+      margin: auto;
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #64c2f8;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 25px;
+      color: #64c2f8;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Solicitar Turno</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required />
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" required />
+
+      <label for="barrio">Barrio:</label>
+      <input type="text" id="barrio" required placeholder="Ej. San Matias, El cazador, Maschwitz, San sebastian,..." />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" rows="4" placeholder="Opcional..."></textarea>
+
+      <label for="fecha">Día del turno:</label>
+      <input type="date" id="fecha" required />
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" required />
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <a href="perfil.html">← Volver a la página principal</a>
+  </div>
+</body>
+</html>
