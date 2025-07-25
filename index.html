@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E.Lissa - Barbero a Domicilio</title>
+  <style>
+    @font-face {
+      font-family: 'lissa';
+      src: url('src/fonts/lissa.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'PhotographSignature';
+      src: url('src/fonts/Photograph_Signature.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'CAESAR';
+      src: url('src/fonts/CAESAR.TTF') format('truetype');
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('src/barbero.jpg') no-repeat center center fixed;
+      background-size: 190%;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.75);
+      min-height: 100vh;
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.178);
+      padding: 1px 10px 5px 15px;
+      
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      font-size: 150px;
+      color: #64c2f8da;
+      margin-bottom: 10px;
+      font-family: 'CAESAR', sans-serif;
+      letter-spacing: 6px;
+      text-align: center;
+    }
+
+    .titulo-central {
+      text-align: center;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .titulo-central .caesar {
+      font-family: 'CAESAR', cursive, sans-serif;
+      font-size: 20px;
+      color: #ffffff;
+      letter-spacing: 2.5px;
+      display: block;
+      margin-top: 30px;
+    }
+
+    .titulo-central .lissa {
+      font-family: 'lissa';
+      font-size: 23px;
+      color: #73c3f1b7;
+      display: block;
+    }
+
+    h2 {
+      margin-top: 10px;
+      margin-bottom: 15px;
+      font-size: 1.6rem;
+      display: inline-block;
+    }
+
+    .especialidadtitulo {
+      font-family: 'CAESAR', cursive, sans-serif;
+      font-size: 20.8px;
+      color: #ffffff;
+      border-top: 2px solid #64c2f86b;
+      padding: 3px 0;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .serviciotitulo {
+      font-family: 'CAESAR', cursive, sans-serif;
+      font-size: 20.8px;
+      color: #e7e7e7;
+      border-top: 2px solid #64c2f86b;
+      padding: 10px 0;
+      margin: 30px 0 10px;
+    }
+
+    .sobremi {
+      border-top: 2px solid #64c2f86b;
+      font-family: "CAESAR";
+      font-size: 20.8px;
+      color: #ffffff;
+    }
+
+    section {
+      margin-top: 60px;
+    }
+
+    p, li {
+      color: #fff9f9;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.4rem;
+      }
+
+      .container {
+        padding: 20px;
+      }
+        section.servicio-con-boton {
+        display: flex; /* asegúrate que el flex esté */
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+        }
+        section.servicio-con-boton a {
+        width: auto;
+        padding: 10px 20px;
+        font-size: 16px;
+        white-space: nowrap;
+      }
+
+        section.servicio-con-boton h2.serviciotitulo {
+        margin-bottom: 12px;
+      }
+}
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <header>
+        <h1>Ezequiel Lissa</h1>
+        <p class="titulo-central">
+          <span class="caesar">Tu imagen...</span>
+          <span class="lissa">MI COMPROMISO</span>
+        </p>
+      </header>
+
+      <section>
+        <h2 class="especialidadtitulo">Especialidades</h2>
+        <ul>
+          <li>Cortes modernos y clasicos</li>
+          <li>Fade, degradé, perfilado de barba y cejas</li>
+          <li>Asesoramiento estético integral</li>
+          <li>Presencia profesional</li>
+        </ul>
+      </section>
+     
+      <section class="servicio-con-boton" style="display: flex; align-items: center; justify-content: space-between; margin-top: 30px;">
+        <h2 class="serviciotitulo">Servicio únicamente a domicilio</h2>
+        <p>📍Haras Santa Maria</p>
+        <p>Belén de Escobar y alrededores.</p>
+        <a href="formulario.html" style="
+        background-color: #64c2f891;
+        color: #313131c9;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 16px;
+        box-shadow: 0 4px 8px rgba(100, 194, 248, 0.425);
+        transition: background-color 0.3s ease;
+        "
+        onmouseover="this.style.backgroundColor='#4a9dd9'"
+        onmouseout="this.style.backgroundColor='#64c2f8'">
+            Reservar turno / Contacto
+        </a>
+      </section>
+
+      <section>
+        <h2 class="sobremi">Pasión por el estilo</h2>
+        <p>Desde 2015 a hoy...</p>
+        <p>
+          Con más de 10 años de experiencia en barbería, brindo un servicio a domicilio pensado para clientes exigentes que valoran la comodidad. Trabajo con productos profesionales y técnicas modernas para lograr un estilo único y acorde a cada persona.
+        </p>
+      </section>
+
+      <div class="footer">
+          &copy; 2025 EstiloLissa - Barbería a Domicilio
+      </div>
+    </div>
+  </div>
+</body>
+</html>
